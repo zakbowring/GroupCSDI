@@ -10,12 +10,12 @@ namespace GroupCSDI {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Summary for MyForm
+	/// Summary for EntryForm
 	/// </summary>
-	public ref class MyForm : public System::Windows::Forms::Form
+	public ref class EntryForm : public System::Windows::Forms::Form
 	{
 	public:
-		MyForm(void)
+		EntryForm(void)
 		{
 			InitializeComponent();
 			//
@@ -27,7 +27,7 @@ namespace GroupCSDI {
 		/// <summary>
 		/// Clean up any resources being used.
 		/// </summary>
-		~MyForm()
+		~EntryForm()
 		{
 			if (components)
 			{
@@ -50,7 +50,7 @@ namespace GroupCSDI {
 		{
 			this->components = gcnew System::ComponentModel::Container();
 			this->Size = System::Drawing::Size(300,300);
-			this->Text = L"MyForm";
+			this->Text = L"EntryForm";
 			this->Padding = System::Windows::Forms::Padding(0);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 		}

@@ -1,12 +1,12 @@
-#include "MyForm.h"
+#include "EntryForm.h"
 
 using namespace System;
 using namespace System::Windows::Forms;
 
-[STAThread]//leave this as is
-void main(array<String^>^ args) {
+[STAThreadAttribute]
+void Main(array<String^>^ args) {
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
-	GroupCSDI::MyForm form;
+	GroupCSDI::EntryForm form;
 	Application::Run(%form);
 }
