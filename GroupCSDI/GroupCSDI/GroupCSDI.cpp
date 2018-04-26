@@ -2,11 +2,15 @@
 //
 
 #include "stdafx.h"
+#include "CinemaBaseX.h"
 
 
 int main()
 {
-	
+	CinemaBaseX main;
+
+	main.Run();
+
     return 0;
 }
 
