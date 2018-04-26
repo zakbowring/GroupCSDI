@@ -9,4 +9,6 @@ void Main(array<String^>^ args) {
 	Application::SetCompatibleTextRenderingDefault(false);
 	GroupCSDI::EntryForm form;
 	Application::Run(%form);
+
+
 }
