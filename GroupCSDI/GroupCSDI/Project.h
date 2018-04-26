@@ -9,5 +9,9 @@ public:
 	//Delete a project
 	Project();
 	~Project();
+	void AddProject();
+	void ValidateProject();
+	void UpdateProject();
+	bool Delete();
 };
 
