@@ -16,7 +16,7 @@ CinemaBaseX::~CinemaBaseX()
 }
 
 bool CinemaBaseX::Run() {
-	
+	//Runs main program.
 
 	cout << "-------------Cinema Base X-------------" << endl;
 	cout << "---------By Trek Star Pictures---------\n" << endl;
