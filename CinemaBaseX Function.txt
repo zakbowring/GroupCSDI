@@ -1,0 +1,178 @@
+Functions
+
+New Project:-
+	Stage Of Production:-
+		Unreleased (dont allow box office or material editing)
+		Now Playing (dont allow material editing, only box office editing)
+		Released (dont allow box office, only these allow material editing)
+	Unique ID Auto generate
+	Title (many projects can have same name)
+	Summary
+	Genre
+	Release Date
+	Filming Locations
+	Language
+	Runtime	
+	Keywords
+	Theatrical Weekly Box Office (Weekly ticket sales)
+	Crew:-
+		Producer
+		Director
+		Writer
+		Cast Member
+		Editor
+		Production Designer
+		Set Decorator
+		Costume Designer
+	Materials:-
+		Single Side DVD
+			ID Number
+			Title
+			Format
+			Audio Format
+			Runtime
+			Language (multi lingual)
+			Retail Price
+			Subtitles (multiple subtitles)
+			Frame aspect
+			Packaging (plastic box)
+		Double Side DVD
+			ID Number
+			Title
+			Format
+			Audio Format
+			Runtime
+			Language (multi lingual)
+			Retail Price
+			Subtitles (multiple subtitles)
+			Frame aspect
+			Packaging (plastic box)
+		Combo Box Set
+			ID Number
+			Title
+			Format
+			Audio Format
+			Runtime
+			Language
+			Retail Price
+			Subtitles
+			Frame aspect
+			Packaging (carboard box)
+		VHS
+			ID Number
+			Title
+			Format
+			Audio Format
+			Runtime
+			Language (single language)
+			Retail Price
+			Subtitles (single subtitle track)
+			Frame aspect
+			Packaging (carboard sleave)
+		Blu Ray
+			ID Number
+			Title
+			Format
+			Audio Format
+			Runtime
+			Language (multi lingual)
+			Retail Price
+			Subtitles (multiple subtitles)
+			Frame aspect
+			Packaging (plastic box)
+
+
+Delete Project:-
+	Delete all information about a project
+
+
+
+Existing Project Update:-
+	Stage Of Production:-
+		Unreleased (dont allow box office or material editing)
+		Now Playing (dont allow material editing, only box office editing)
+		Released (dont allow box office, only these allow material editing)
+	Title (many projects can have same name)
+	Summary
+	Genre
+	Release Date
+	Filming Locations
+	Language
+	Runtime	
+	Keywords
+	Theatrical Weekly Box Office (Weekly ticket sales)
+	Crew:-
+		Producer
+		Director
+		Writer
+		Cast Member
+		Editor
+		Production Designer
+		Set Decorator
+		Costume Designer
+	Materials:-
+		Single Side DVD
+			ID Number
+			Title
+			Format
+			Audio Format
+			Runtime
+			Language (multi lingual)
+			Retail Price
+			Subtitles (multiple subtitles)
+			Frame aspect
+			Packaging (plastic box)
+		Double Side DVD
+			ID Number
+			Title
+			Format
+			Audio Format
+			Runtime
+			Language (multi lingual)
+			Retail Price
+			Subtitles (multiple subtitles)
+			Frame aspect
+			Packaging (plastic box)
+		Combo Box Set
+			ID Number
+			Title
+			Format
+			Audio Format
+			Runtime
+			Language
+			Retail Price
+			Subtitles
+			Frame aspect
+			Packaging (carboard box)
+		VHS
+			ID Number
+			Title
+			Format
+			Audio Format
+			Runtime
+			Language (single language)
+			Retail Price
+			Subtitles (single subtitle track)
+			Frame aspect
+			Packaging (carboard sleave)
+		Blu Ray
+			ID Number
+			Title
+			Format
+			Audio Format
+			Runtime
+			Language (multi lingual)
+			Retail Price
+			Subtitles (multiple subtitles)
+			Frame aspect
+			Packaging (plastic box)
+
+
+
+Catalogue Browsing:-
+	Search By Project Title:- (views project info with material summary)
+		View Material Detail
+	Search By Cast Member (returns all films with that cast member)
+
+
+Log Report (returns recent additions or deletions or edits to the database)

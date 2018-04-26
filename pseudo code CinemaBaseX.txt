@@ -1,0 +1,112 @@
+array array allProjectRecords = projectRecords.txt
+
+
+system print - "what would you like to do?
+1 List all movies
+2 add a project
+3 search project by titles
+4 search project by actors
+5 edit a project
+6 delete a project
+7 log report"
+
+user input = cin;
+
+if(user input = 1){
+//list all movies
+system print << printAllMoviesFunction(allProjectRecords);
+
+} else if(user input = 2){
+//add a project
+
+
+} else if(user input = 3){
+//search by titles
+searchByTitlesFunction(allProjectRecords);
+
+} else if(user input = 4){
+//search by actor
+systemprint << "enter the actor you wish to search"
+userinput2 = cin;
+searchByActorFunction(allProjectRecords, userinput2);
+
+} else if(user input = 5){
+//edit project
+
+} else if(user input = 6){
+//delete project
+systemprint << "enter the project ID you wish to delete"
+userinput3 = cin;
+allProjectRecords = deleteProjectFunction(allProjectRecords, userinput3);
+
+} else if(user input = 7){
+//log report
+system print = printReportLogFunction(allProjectRecords);
+
+
+} else {
+//invalid input
+loop back to start user input
+}
+
+
+
+
+
+
+
+
+
+
+
+void printAllMoviesFunction(array array aPR){ //this function is to print all the movie titles this can either be achieved by putting them all into a string and then printing in the main code or just printing them from the function
+
+	int movieTitleIndex = 2;
+	int arraySize = aPR.size();
+
+	for(int j = 0;j<arraySize;j++){
+		system print << aPR[j][movieTitleIndex];
+	}
+}
+
+
+void searchByActorFunction(array array aPR, string actorname){
+	int crewIndex = 8;
+	int movieTitleIndex = 2;
+	int arraySize = aPR.size();
+	for(int j =0;j<arraySize;j++{
+		if (stringfound.aPR[j][crewIndex](actorname){
+			systemprint << aPR[j][movieTitleIndex];
+
+		}
+	}
+}
+
+array array deleteProjectFunction(array array aPR, string projectToDelete){
+
+	int projectIdIndex = 1;
+	int arraySize = aPR.size();
+	for(int j = 0;j<arraySize;j++){
+		if(aPR[j][projectIdIndex] = projectToDelete){
+			removeIndex(aPR[j]);
+		}
+	}
+	return aPR;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
