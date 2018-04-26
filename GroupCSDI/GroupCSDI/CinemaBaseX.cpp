@@ -16,8 +16,7 @@ CinemaBaseX::~CinemaBaseX()
 }
 
 bool CinemaBaseX::Run() {
-	//Runs main program
-
+	//Display Main Screen
 	cout << "-------------Cinema Base X-------------" << endl;
 	cout << "---------By Trek Star Pictures---------\n" << endl;
 	cout << "To enter the program type 'enter', to close the program type 'exit'" << endl;
