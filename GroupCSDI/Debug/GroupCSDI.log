@@ -1,0 +1,4 @@
+﻿  MyForm.cpp
+MyForm.cpp(7): warning C4829: Possibly incorrect parameters to function main. Consider 'int main(Platform::Array<Platform::String^>^ argv)'
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+  GroupCSDI.vcxproj -> C:\Users\zakbo\Desktop\sdi\GroupCSDI\Debug\GroupCSDI.exe
