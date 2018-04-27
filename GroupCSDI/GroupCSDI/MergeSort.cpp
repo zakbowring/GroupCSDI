@@ -14,6 +14,7 @@ MergeSort::~MergeSort()
 
 
 int MergeSort::Run() {
+	//when testing this only 1040 words can be correctly pasted into the console window.
 	Node* headNode = NULL;
 
 	receiveLinkedList(headNode);
