@@ -148,6 +148,7 @@
   <ItemGroup>
     <ClInclude Include="CinemaBaseX.h" />
     <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="MergeSort.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Project.h" />
     <ClInclude Include="stdafx.h" />
@@ -157,6 +158,7 @@
     <ClCompile Include="CinemaBaseX.cpp" />
     <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MergeSort.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="Project.cpp" />
     <ClCompile Include="stdafx.cpp">

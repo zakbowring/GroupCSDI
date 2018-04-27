@@ -1,5 +1,9 @@
 #include "stdafx.h"
 #include "CinemaBaseX.h"
+#include "LinkedList.h"
+#include "MergeSort.h"
+#include "Node.h"
+#include "Project.h"
 #include <string>
 #include <iostream>
 using namespace std;
@@ -18,6 +22,8 @@ CinemaBaseX::~CinemaBaseX()
 bool CinemaBaseX::Run() {
 	//Display Main Screen
 	CinemaBaseX System;
+	MergeSort test;
+	test.Run();
 	cout << "-------------Cinema Base X-------------" << endl;
 	cout << "---------By Trek Star Pictures---------\n" << endl;
 	cout << "To enter the program type 'enter', to close the program type 'exit'" << endl;

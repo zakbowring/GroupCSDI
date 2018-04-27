@@ -4,10 +4,7 @@
 using namespace std;
 
 
-LinkedList::LinkedList()
-{
-	
-}
+
 
 
 LinkedList::~LinkedList(void)
@@ -107,8 +104,7 @@ void LinkedList::sort()
 		int data;
 		node *next;
 	};
-
-	node *head;
+	node *head = NULL;
 	int count = 0, i;
 	node *start = head;
 	node *current = NULL;

@@ -5,6 +5,8 @@
 #include "CinemaBaseX.h"
 
 
+
+
 int main()
 {
 	//Creates an object called System
