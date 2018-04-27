@@ -40,5 +40,5 @@ void Project::UpdateProject() {
 bool Project::Delete() {
 	//sorts the data structure
 	//deletes from data structure
-
+	return 0;
 }

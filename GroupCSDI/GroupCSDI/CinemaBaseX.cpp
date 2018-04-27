@@ -17,6 +17,7 @@ CinemaBaseX::~CinemaBaseX()
 
 bool CinemaBaseX::Run() {
 	//Display Main Screen
+	CinemaBaseX System;
 	cout << "-------------Cinema Base X-------------" << endl;
 	cout << "---------By Trek Star Pictures---------\n" << endl;
 	cout << "To enter the program type 'enter', to close the program type 'exit'" << endl;
@@ -29,6 +30,14 @@ bool CinemaBaseX::Run() {
 	else
 		cout << "Input invalid" << endl;
 	cin >> input;
+	System.Shutdown();
 	return false;
 
+}
+
+void CinemaBaseX::Shutdown() {
+	cout << "Shutting Down..." << endl;
+	cout << "3" << endl;
+	cout << "2" << endl;
+	cout << "1" << endl;
 }

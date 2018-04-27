@@ -5,5 +5,6 @@ public:
 	CinemaBaseX();
 	~CinemaBaseX();
 	bool Run();
+	void Shutdown();
 };
 

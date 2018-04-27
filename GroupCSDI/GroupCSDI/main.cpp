@@ -7,10 +7,10 @@
 
 int main()
 {
-	//Creates an object called main
-	CinemaBaseX main;
-	//Runs the main program
-	main.Run();
+	//Creates an object called System
+	CinemaBaseX System;
+	//Runs the program
+	System.Run();
 
     return 0;
 }
