@@ -1,6 +1,8 @@
 #include "stdafx.h"
 #include "LinkedList.h"
 
+using namespace std;
+
 
 LinkedList::LinkedList()
 {
@@ -8,9 +10,95 @@ LinkedList::LinkedList()
 }
 
 
-LinkedList::~LinkedList()
+LinkedList::~LinkedList(void)
 {
+	Node* currNode = head, *nextNode = NULL;
+	while (currNode != NULL)
+	{
+		nextNode = currNode->next;
+		//destroy the current node
+		delete currNode;
+		currNode = nextNode;
+	}
 }
+
+Node* LinkedList::InsertNode(int index, string x[2])
+{
+	if (index < 0) return NULL;
+
+	int currIndex = 1;
+	Node* currNode = head;
+	while (currNode&&index > currIndex) {
+		currNode = currNode->next;
+		currIndex++;
+	}
+	if (index > 0 && currNode == NULL)return NULL;
+
+	Node* newNode = new Node;
+	for (int i = 0; i < 2; i++)
+	{
+		newNode->data[i] = x[i];
+	}
+	if (index == 0) {
+		newNode->next = head;
+		head = newNode;
+	}
+	else {
+		newNode->next = currNode->next;
+		currNode->next = newNode;
+	}
+	return newNode;
+}
+
+int LinkedList::FindNode(string x[2]) {
+	Node* currNode = head;
+	int currIndex = 1;
+	while (currNode&&currNode->data != x) {
+		currNode = currNode->next;
+		currIndex++;
+	}
+	if (currNode) return currIndex;
+	return 0;
+}
+
+//int LinkedList::DeleteNode(string x[]) {
+//	Node* prevNode = NULL;
+//	Node* currNode = head;
+//	int  currIndex = 1;
+//	while (currNode&&currNode->data != x) {
+//		prevNode = currNode;
+//		currNode = currNode->next;
+//		currIndex++;
+//	}
+//	if (currNode) {
+//		if (prevNode) {
+//			prevNode->next = currNode->next;
+//			delete currNode;
+//		}
+//		else
+//		{
+//			head = currNode->next;
+//			delete currNode;
+//		}
+//		return currIndex;
+//	}
+//	return 0;
+//}
+
+void LinkedList::DisplayList() {
+	int num = 0;
+	Node* currNode = head;
+	while (currNode != NULL) {
+		for (int i = 0; i < 2; i++)
+		{
+			cout << currNode->data[i] << endl;
+		}
+		currNode = currNode->next;
+		num++;
+	}
+	cout << "Number of nodes in the list: " << num << endl;
+}
+
 
 //Have a pointer to the start of the list
 void LinkedList::sort()
