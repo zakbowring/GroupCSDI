@@ -4,7 +4,6 @@
 #include <string>
 #include <fstream>
 
-using namespace std;
 
 LinkedList::~LinkedList(void)
 {
@@ -61,14 +60,14 @@ int LinkedList::StartUp()
 {
 	LinkedList List;
 	ifstream inFile; //opens an fstream for file reading
-	inFile.open("testing.txt"); 
-	int count;
-	string temp[21];
-	int no1 = 0;
+	inFile.open("testing.txt"); //opens up the specified file
+	int count; //Count used for putting values into the array
+	string temp[21]; //The array used to store and place data in linked list 
+	int no1 = 0; //Used to insert nodes in linked list (order they're read out of file)
 
-	if (inFile.is_open())
+	if (inFile.is_open()) //If the file opens
 	{
-		int count = 0
+		int count = 0;
 			while (getline(inFile, temp[count], ','))
 			{
 				count++;
