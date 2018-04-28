@@ -67,7 +67,7 @@ int LinkedList::StartUp()
 
 	if (inFile.is_open()) //If the file opens
 	{
-		int count = 0;
+		count = 0;
 			while (getline(inFile, temp[count], ','))
 			{
 				count++;
