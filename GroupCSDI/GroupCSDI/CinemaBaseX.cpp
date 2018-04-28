@@ -22,8 +22,12 @@ CinemaBaseX::~CinemaBaseX()
 bool CinemaBaseX::Run() {
 	//Display Main Screen
 	CinemaBaseX System;
-	MergeSort test;
-	test.Run();
+	MergeSort sort;
+	LinkedList List;
+	Node firstNode;
+	List.StartUp();
+	firstNode = List.FindNode(["1"]);
+	sort.Run(&firstNode);
 	cout << "-------------Cinema Base X-------------" << endl;
 	cout << "---------By Trek Star Pictures---------\n" << endl;
 	cout << "To enter the program type 'enter', to close the program type 'exit'" << endl;

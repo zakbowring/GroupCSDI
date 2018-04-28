@@ -6,7 +6,7 @@ public:
 
 	MergeSort();
 	~MergeSort();
-	int Run();
+	int Run(Node *&headNode);
 	void mergeSort(Node *&head);
 	// sorts the link list pointed to by head 
 	// precondition: head points to a linked list of items

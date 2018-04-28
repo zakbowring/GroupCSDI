@@ -13,6 +13,6 @@ public:
 	//When can use this value to act as the integer place holder 
 
 	string data[21];
-	int item;
+	//int item;
 	Node* next;
 };

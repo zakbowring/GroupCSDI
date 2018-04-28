@@ -13,13 +13,13 @@ MergeSort::~MergeSort()
 }
 
 
-int MergeSort::Run() {
+int MergeSort::Run(Node *&headNode) {
 	//when testing this only 1040 words can be correctly pasted into the console window.
-	Node* headNode = NULL;
+	//Node* headNode = NULL;
 
 	receiveLinkedList(headNode);
 	mergeSort(headNode);
-	cout << "Sorted Number:";
+	cout << "Sorted List:";
 	displayLinkedList(headNode);
 	cout << endl;
 
@@ -51,7 +51,7 @@ Node* MergeSort::merge(Node *&head1, Node *&head2) {
 	else if (head2 == NULL) return head1;
 
 	//compare the value
-	if (head1->item < head2->item) {
+	if (head1->data < head2->data) {
 		newHead = head1;							//assign the newHead to the Node has smaller value
 		newHead->next = merge(head1->next, head2);	//recall the functionto find the next Node
 	}
@@ -66,7 +66,7 @@ Node* MergeSort::merge(Node *&head1, Node *&head2) {
 void MergeSort::displayLinkedList(Node *head) {
 	Node* current = head;
 	for (; current != NULL; current = current->next) {
-		cout << current->item << " ";
+		cout << current->data << " ";
 	}
 }
 int MergeSort::getLength(Node *head) {
@@ -79,17 +79,17 @@ int MergeSort::getLength(Node *head) {
 }
 
 void MergeSort::receiveLinkedList(Node *&head) {
-	stringstream ss;
-	string input;
+	//stringstream ss;
+	//string input;
 	Node* thisNode = new Node;
 	Node* lastNode = 0;
 	head = thisNode;
 
-	cout << "Enter number to be sorted: ";
-	getline(cin, input);
-	ss << input;
+	//cout << "Enter number to be sorted: ";
+	//getline(cin, input);
+	//ss << input;
 
-	while (ss >> thisNode->item) {
+	while (thisNode->data) {
 		lastNode = thisNode;					//keep track of the last Node
 		thisNode->next = new Node;			//Create new Node and link it to the previous Node
 		thisNode = thisNode->next;				//increment to the next Node
