@@ -9,9 +9,10 @@ public:
 	~LinkedList(void);
 	void sort();
 	bool IsEmpty() { return head == NULL; }
-	Node* InsertNode(int index, string x[2]);
-	int FindNode(string x[2]);
-	int DeleteNode(string x[2]);
+	Node* InsertNode(int index, string x[21]);
+	int FindNode(string x[21]);
+	int StartUp();
+	int DeleteNode(string x[21]);
 	void DisplayList(void);
 
 private:

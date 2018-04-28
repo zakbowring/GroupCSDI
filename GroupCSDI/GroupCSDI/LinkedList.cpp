@@ -1,11 +1,10 @@
 #include "stdafx.h"
 #include "LinkedList.h"
+#include <iostream>
+#include <string>
+#include <fstream>
 
 using namespace std;
-
-
-
-
 
 LinkedList::~LinkedList(void)
 {
@@ -19,7 +18,7 @@ LinkedList::~LinkedList(void)
 	}
 }
 
-Node* LinkedList::InsertNode(int index, string x[2])
+Node* LinkedList::InsertNode(int index, string x[21])
 {
 	if (index < 0) return NULL;
 
@@ -32,7 +31,7 @@ Node* LinkedList::InsertNode(int index, string x[2])
 	if (index > 0 && currNode == NULL)return NULL;
 
 	Node* newNode = new Node;
-	for (int i = 0; i < 2; i++)
+	for (int i = 0; i < 21; i++)
 	{
 		newNode->data[i] = x[i];
 	}
@@ -47,7 +46,7 @@ Node* LinkedList::InsertNode(int index, string x[2])
 	return newNode;
 }
 
-int LinkedList::FindNode(string x[2]) {
+int LinkedList::FindNode(string x[21]) {
 	Node* currNode = head;
 	int currIndex = 1;
 	while (currNode&&currNode->data != x) {
@@ -55,6 +54,77 @@ int LinkedList::FindNode(string x[2]) {
 		currIndex++;
 	}
 	if (currNode) return currIndex;
+	return 0;
+}
+
+int LinkedList::StartUp() 
+{
+	LinkedList List;
+	ifstream inFile; //opens an fstream for file reading
+	inFile.open("testing.txt"); 
+	int count;
+	string temp[21];
+	int no1 = 0;
+
+	if (inFile.is_open())
+	{
+		int count = 0
+			while (getline(inFile, temp[count], ','))
+			{
+				count++;
+				getline(inFile, temp[count], ','); //Project Title [1]
+				count++;
+				getline(inFile, temp[count], ','); //Summary [2]
+				count++;
+				getline(inFile, temp[count], ','); //Genre [3]
+				count++;
+				getline(inFile, temp[count], ','); //Release Date [4]
+				count++;
+				getline(inFile, temp[count], ','); //Filiming Location [5]
+				count++;
+				getline(inFile, temp[count], ','); //Language[6]
+				count++;
+				getline(inFile, temp[count], ','); //Runtime [7]
+				count++;
+				getline(inFile, temp[count], ','); //Keywords[8]
+				count++;
+				getline(inFile, temp[count], ','); //Weekly ticket sales [9]
+				count++;
+				getline(inFile, temp[count], ','); //Project stage [10]
+				count++;
+				getline(inFile, temp[count], ','); //Crew [11]
+				count++;
+				getline(inFile, temp[count], ','); //Type of Disc [12]
+				count++;
+				getline(inFile, temp[count], ','); //Title [13]
+				count++;
+				getline(inFile, temp[count], ','); //Format [14]
+				count++;
+				getline(inFile, temp[count], ','); //Audio Format [15]
+				count++;
+				getline(inFile, temp[count], ','); //Bonus Features [16]
+				count++;
+				getline(inFile, temp[count], ','); //Disc Language(s) [17]
+				count++;
+				getline(inFile, temp[count], ','); //Retail Price [18]
+				count++;
+				getline(inFile, temp[count], ','); //Subtitle Langueage(s) [19]
+				count++;
+				getline(inFile, temp[count], ','); //Frame Aspect [20]
+				List.InsertNode(no1, temp); //Inserts the array into the linked list
+				cout << "-------------------------" << endl;
+				List.DisplayList();
+				cout << "-------------------------" << endl;
+				no1++; //Increases so the next array is placed at the next spot in the linked list
+				count = 0; //Resets for writing the next array
+			}
+		inFile.close();
+	}
+	else if (!inFile.is_open())
+		cout << "There was an error in opening the data file!" << endl;
+	string input;
+	cin >> input;
+
 	return 0;
 }
 
@@ -86,7 +156,7 @@ void LinkedList::DisplayList() {
 	int num = 0;
 	Node* currNode = head;
 	while (currNode != NULL) {
-		for (int i = 0; i < 2; i++)
+		for (int i = 0; i < 21; i++)
 		{
 			cout << currNode->data[i] << endl;
 		}
