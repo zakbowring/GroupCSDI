@@ -26,8 +26,9 @@ bool CinemaBaseX::Run() {
 	LinkedList List;
 	Node firstNode;
 	List.StartUp();
-	firstNode = List.FindNode(["1"]);
-	sort.Run(&firstNode);
+	List.DisplayList();
+	//firstNode = List.FindNode(["1"]);
+	//sort.Run(&firstNode);
 	cout << "-------------Cinema Base X-------------" << endl;
 	cout << "---------By Trek Star Pictures---------\n" << endl;
 	cout << "To enter the program type 'enter', to close the program type 'exit'" << endl;
